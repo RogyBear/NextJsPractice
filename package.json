@@ -5,8 +5,10 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "node server.js",
-		"build": "next-build",
-		"start": "NODE_ENV=production node server.js"
+		"build": "next build",
+		"start": "NODE_ENV=production node server.js",
+		"export": "next export",
+		"deploy": "npm run build && npm run export"
 	},
 	"keywords": [],
 	"author": "",
